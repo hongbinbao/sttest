@@ -5,11 +5,10 @@ install:
 
 before_script:
   - echo "Before script..."
-  - echo ANDROID_HOME
   - which monkeyrunner
 
 script:
-  - $ANDROID_HOME/tools/monkeyrunner test.py
+  - python main.py
 
 after_script:
   - echo "after_script"
