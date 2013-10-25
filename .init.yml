@@ -1,0 +1,17 @@
+python: 2.7
+
+install:
+  - apt-get install python-opencv -y
+  - pip install python-numpy -y
+  - pip install -U uiautomator
+
+before_script:
+  - echo "Before script..."
+  - echo ANDROID_HOME
+  - which monkeyrunner
+
+script:
+  - monkeyrunner test.py
+
+after_script:
+  - echo "after_script"
