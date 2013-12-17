@@ -1,5 +1,0 @@
-import nose
-from plugin1 import TestPlugin
-
-if __name__ == '__main__':
-    nose.main(addplugins=[TestPlugin()])
