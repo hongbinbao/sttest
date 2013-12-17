@@ -12,7 +12,7 @@ before_script:
   - which nosetests
 
 script:
-  - nosetests --with-plan-loader --loop 1 --with-device-config --with-local-report --verbosity 1
+  - nosetests --with-plan-loader --loop 10 --with-device-config --with-local-report --verbosity 2
 
 after_script:
   - echo "after_script"
