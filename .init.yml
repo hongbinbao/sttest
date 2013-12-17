@@ -5,8 +5,6 @@ install:
   - pip install -U devicewrapper
   - pip install -U customnoseplugins
 
-  --setup.py 
-
 before_script:
   - echo "Before script..."
   - which nosetests
