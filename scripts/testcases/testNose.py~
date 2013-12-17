@@ -1,0 +1,13 @@
+import nose
+def setup_func():
+    print "set up test fixtures"
+
+def teardown_func():
+    print "tear down test fixtures"
+
+#@nose.tools.timed(.1)
+def test():
+    while 0:
+        print "test ..."
+
+test = nose.tools.with_setup(setup_func, teardown_func)(test)

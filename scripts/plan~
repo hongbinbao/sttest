@@ -1,0 +1,4 @@
+[tests]
+scripts.testcases.message.MessageTest.testSendMessage1 = 10
+scripts.testcases.message.MessageTest.testSendMessage2 = 1
+

@@ -1,0 +1,42 @@
+#!/usr/bin/python
+# -*- coding:utf-8 -*- 
+import unittest
+from devicewrapper.android import device as d
+
+class MessageTest(unittest.TestCase):
+    def setUp(self):
+        super(MessageTest, self).setUp()
+        d.press('back')\
+         .press('back')\
+         .press('home')
+
+    def tearDown(self):
+        d.press('back')\
+         .press('back')\
+         .press('back')\
+         .press('home')
+
+    def testSendMessage1(self):
+        d.click_image('a.png')\
+         .expect('no_msg.png')\
+         .click_image('create_btn.png')
+
+        if d.find('input_label.png'):
+            d.click_image('input_label.png')\
+             .click_image('content_label.png')
+
+        d.expect('send_btn.png')
+            
+    def testSendMessage2(self):
+        d.click_image('a.png')\
+         .expect('no_msg.png')\
+         .click_image('create_btn.png')
+
+        if d.find('input_label.png'):
+            d.click_image('input_label.png')\
+             .click_image('content_label.png')
+
+        d.expect('send_btn.png')
+
+
+
