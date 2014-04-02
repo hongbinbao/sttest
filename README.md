@@ -1,4 +1,4 @@
-sttest
+work station template
 ======
 
-project of test 
+work station structure demo
